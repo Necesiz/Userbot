@@ -93,13 +93,13 @@ SILINEN_PLUGIN = {}
 STRING_SESSION = os.environ.get("STRING_SESSION", None)
 
 # Kanal / Grup ID günlüyə qeyd etmə
-BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID", "True"))
+BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID", "-1001737573985"))
 
 # JARVIS
 AUTO_UPDATE =  sb(os.environ.get("AUTO_UPDATE", "True"))
 
 # UserBot log özəlliyi
-BOTLOG = sb(os.environ.get("BOTLOG", "False"))
+BOTLOG = sb(os.environ.get("BOTLOG", "True"))
 BOTLOG_TAGGER = os.environ.get("BOTLOG_TAGGER", "DEAKTIV")
 LOGSPAMMER = sb(os.environ.get("LOGSPAMMER", "True"))
 
