@@ -93,7 +93,7 @@ SILINEN_PLUGIN = {}
 STRING_SESSION = os.environ.get("STRING_SESSION", None)
 
 # Kanal / Grup ID günlüyə qeyd etmə
-BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID", None))
+BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID", "True"))
 
 # JARVIS
 AUTO_UPDATE =  sb(os.environ.get("AUTO_UPDATE", "True"))
