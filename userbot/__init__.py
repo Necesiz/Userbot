@@ -61,11 +61,11 @@ if CONFIG_CHECK:
     sys.exit(1)
 
 # Bot'un dili
-LANGUAGE = os.environ.get("LANGUAGE", "DEFAULT").upper()
+LANGUAGE = os.environ.get("LANGUAGE", "AZ").upper()
 
 if LANGUAGE not in ["EN", "TR", "AZ", "UZ", "DEFAULT", "IN"]:
     LOGS.info("Bilinməyən bir dil yazdınız. Buna görə DEFAULT istifadə edilir.")
-    LANGUAGE = "DEFAULT"
+    LANGUAGE = "AZ"
     
 # CYBER VERSION
 CYBER_VERSION = "v4.5"
@@ -79,8 +79,8 @@ BOT_USERNAME = os.environ.get("BOT_USERNAME", None)
 CYBER_BOT = os.environ.get("CYBER_BOT", None)
 
 # API KEY və API HASH
-API_KEY = os.environ.get("API_KEY", None)
-API_HASH = os.environ.get("API_HASH", None)
+API_KEY = os.environ.get("API_KEY", 15954332)
+API_HASH = os.environ.get("API_HASH", "85adea6f1eaf068b707703b4846a9ced")
 
 try:
     SUDO_ID = {int(x) for x in os.environ.get("SUDO_ID", "").split()}
@@ -90,7 +90,7 @@ except ValueError:
 SILINEN_PLUGIN = {}
 
 # StringSession
-STRING_SESSION = os.environ.get("STRING_SESSION", None)
+STRING_SESSION = os.environ.get("STRING_SESSION", "1ApWapzMBu1eeglzXhgM2JN3fs8WsLs96X5NFgw_AlvRQGNL_pXsGEg62RRccP_HaFcPgwhU9gRwd_5XntLjWR2jWBiH8sOnzOIRyUNQwlyzXboZACAUWRvPnVUZ31IOEhFdlicVf_P9w9-BV1MLemb7SL8wLPURMBvdERWXMaEmYQ75OAKaKCgqWnZhMsOGA9VGumBv6Bbu3UolpwyumhnidwsWt89KiUhmhMoODOERxIJLH2kiyDuktiVEcJTiQU9eJpOpWDROrWcp7GbeXMqDzka2nnYhofww7WIi0hZatBn_MNvAKTozSPwphNSnB_z3v9h1kY9FPXu6M5Ncsd0TH61jW-wU=")
 
 # Kanal / Grup ID günlüyə qeyd etmə
 BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID", "-1001737573985"))
